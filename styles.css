@@ -45,5 +45,21 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Additional styling for footer content */
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
 }
