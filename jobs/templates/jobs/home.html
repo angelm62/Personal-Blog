@@ -249,26 +249,30 @@
 
 
     <!-- START THE FEATURETTES -->
-
+    
+    
+    
     <hr class="featurette-divider">
-
+    {% for job in jobs.all %}
     <div class="row featurette">
       
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Example here </p>
+        
+
+
+        <h2 class="featurette-heading fw-normal lh-1">{{ job.summary }}. <span class="text-body-secondary">Company</span></h2>
+        <p class="lead"> Description </p>
       </div>
+
       <div class="col-md-5">
-        <img src="{% static 'angel.jpeg'%}"
+        <img src="{{ job.image.url }}"
              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
              alt="description"></img>
-
-       
       </div>
- 
+      <hr class="featurette-divider">
     </div>
-
-    <hr class="featurette-divider">
+    {% endfor %}
+    
 
   
 
