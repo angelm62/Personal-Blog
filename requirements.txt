@@ -1,4 +1,4 @@
 Django
-psycopg
-psycopg2
-sqlparse
+psycopg2-binary
+
+
